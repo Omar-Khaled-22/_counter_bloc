@@ -1,16 +1,18 @@
 # counterapp
 
-A new Flutter project.
+1-Set up a new Flutter project and add the flutter_bloc package to pubspec.yaml
 
-## Getting Started
+2-create the counter cubit
 
-This project is a starting point for a Flutter application.
+3- Add cubit to your app
 
-A few resources to get you started if this is your first Flutter project:
+4-Access State
+{Use context.read<CounterCubit>() to call the increment abd decrement methods
+Use BlocBuilder to rebuild the UI when the state changes}
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+5-Update a Text widget to display the current counter value using BlocBuilder
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+6- Show a dialog when the counter reaches a negative value using BlocListener
+
+7- make counter app with BlocConsumer to display the counter and
+show a message whenever the counter reaches 10 or -10.
